@@ -17,3 +17,29 @@ var typed3 = new Typed(".skilovi",{
     typeSpeed:50,    
     loop:true
 })
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+//  menuIcon.onClick = () => {
+//      menuIcon.classList.toggle('bx-menu');
+//      navbar.classList.toggle('active');
+//  }
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+});
+
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
+
+const navbarItems = document.querySelectorAll('.navbar a');
+navbarItems.forEach(item => {
+    item.addEventListener('click', function() {
+        // Remove the 'active' class from the navbar
+        navbar.classList.remove('active');
+        // Change the menu icon back to its original state (if needed)
+        menuIcon.classList.remove('bx-x');
+    });
+});
+
