@@ -163,6 +163,7 @@ margin-top: 100px;
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    
 }
 
 .about{
@@ -190,15 +191,18 @@ margin-top: 100px;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    animation: floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
+    /* animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s; */
 }
 .about-img:nth-of-type(2){
     margin-top: 90px;   
 }
+
 span{
     color: #0ef;
 }
+
+
 
 .about-img .circle-spin{
     position: absolute;
@@ -220,12 +224,17 @@ span{
     justify-content: center;
     align-items: center;
 }
-
+.linkgit{
+    text-decoration: none;
+    color: inherit;
+}
 .about-content1{
+    margin-top: 30px;
     width: 50%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: #0ef;
 }
 
 .skills{
@@ -253,6 +262,8 @@ span{
     margin-bottom: 150px; 
 
 }
+
+
 /* .education-column .title{
     margin: 10 10 5rem 5rem;
 } */
@@ -347,6 +358,31 @@ margin-top: 200px;
 #menu-icon{
     display: none;
 }
+
+
+
+.projekti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding: 5rem;
+    margin-bottom: 150px; 
+
+}
+
+.skillzss{
+    height: 350px;
+    border-radius: 50%;
+}
+
+section#projekti div.about-img1 img.pocetna {
+    height: 300px !important;
+    /* ...ostali stilovi... */
+}
+
+
 .bx{
     cursor: pointer;
     font-size: 24px;
@@ -426,15 +462,40 @@ margin-top: 200px;
     span.omeni, span.skilovi{
         font-size: 20px;  /* Možete koristiti bilo koju vrijednost za font-size, npr. "20px", "1.5em", itd. */
     }
-    
+    .navbar a {
+        font-size: 14px;
+    }
+    .skillzss{
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+    }
+
+    .social-media {
+        margin-left: 55px;
+    }
+    .btn{
+        margin-left: 65px;
+    }
+    section#projekti div.about-img1 img.pocetna {
+        height: 200px !important;
+        /* ...ostali stilovi... */
+    }
 }
-@media (max-width:765px){
+@media (max-width:777px){
     .header{
         /* background-color: rgb(33, 49, 50); */
     }
     #menu-icon{
         display: block;
     }
+
+    .social-media {
+        margin-left: 55px;
+    }
+    .btn{
+        margin-left: 65px;
+    }
         .navbar{
             position:absolute;
             top: 100%;
@@ -469,7 +530,7 @@ margin-top: 200px;
         }
     .navbar a {
         display: flex;
-        font-size: 2rem;
+        font-size: 14px;
         margin: 3rem 0;
         transform: translateX(-20rem);
         transition: .25s ease;
@@ -481,13 +542,65 @@ margin-top: 200px;
         transition-delay: .25s;
     }
     
+    .home-content{
+        max-width: 300px;   
+        margin-top: 100px; 
+    }
+    .home-content h1{
+        font-size: 40px;
+    }    
+        .home-content h3{
+            font-size: 22px;
+            font-weight: 700;
+            opacity: 0;
+            animation: slideBottom 1s ease forwards;
+            animation-delay: .7s; 
+        }
+        section#projekti div.about-img1 img.pocetna {
+            height: 200px !important;
+            /* ...ostali stilovi... */
+        }
+}
+
+@media (max-width:620px){
+
+    section#projekti div.about-img1 img.pocetna {
+        height: 200px !important;
+        /* ...ostali stilovi... */
+    }
+
+    .home-content{
+        max-width: 200px;
+    }
+    .home-content h3:nth-of-type(2){
+        font-size: 15px;
+    }
+    .home-content h1 {
+        font-size: 37px;
+    }
+    .circle-spin {
+        width: 100px; 
+        height: 100px; 
+        overflow: hidden; 
+    }
+    
+    .social-media {
+        margin-left: 45px;
+    }
+    .btn{
+        margin-left: 55px;
+    }
+
 }
 
  @media (max-width:412px ){ 
     html{
         font-size: 55%;
     }
-
+    section#projekti div.about-img1 img.pocetna {
+        height: 100px !important;
+        /* ...ostali stilovi... */
+    }
     #menu-icon{
         display: block;
     }
@@ -535,5 +648,12 @@ margin-top: 200px;
     .navbar.active a {
         transform: translateX(0);
         transition-delay: .25s;
+    }
+
+    .social-media {
+        margin-left: 45px;
+    }
+    .btn{
+        margin-left: 55px;
     }
 }
