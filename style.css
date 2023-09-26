@@ -481,6 +481,10 @@ section#projekti div.about-img1 img.pocetna {
         height: 200px !important;
         /* ...ostali stilovi... */
     }
+
+    .about-content1{
+        font-size: initial;
+    }
 }
 @media (max-width:777px){
     .header{

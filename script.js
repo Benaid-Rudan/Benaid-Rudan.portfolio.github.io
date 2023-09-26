@@ -18,18 +18,18 @@ var typed3 = new Typed(".skilovi",{
     loop:true
 })
 
-var typed4 = new Typed(".projekts",{
-    strings: [" I have experience working in HTML, CSS, JavaScript which enables me to create visually appealing and interactive websites. Also, I'm familiar with C# and Angular and I'm eager to learn new technologies."],
-    typeSpeed:50,    
-    loop:true
-})
-
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// var typed4 = new Typed(".projekts",{
+//     strings: [" I have experience working in HTML, CSS, JavaScript which enables me to create visually appealing and interactive websites. Also, I'm familiar with C# and Angular and I'm eager to learn new technologies."],
+//     typeSpeed:50,    
+//     loop:true
+// })
 //  menuIcon.onClick = () => {
 //      menuIcon.classList.toggle('bx-menu');
 //      navbar.classList.toggle('active');
 //  }
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
 document.getElementById('menu-icon').addEventListener('click', function() {
     menuIcon.classList.toggle('bx-x');
