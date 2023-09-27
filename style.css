@@ -10,6 +10,8 @@
 body{
     background-color: #1f242d;
     color: #fff;
+    width: 100%;
+    overflow-x: hidden;
 }
 .header{
     position: fixed;
@@ -42,6 +44,7 @@ body{
     opacity: 0;
     animation: slideTop 1s ease forwards; 
     animation-delay: calc(.2s * var(--i));
+    font-weight: bolder;
 }
 
 .navbar a:hover,
@@ -479,6 +482,7 @@ section#projekti div.about-img1 img.pocetna {
     }
     .navbar a {
         font-size: 14px;
+        font-weight: bolder;
     }
     .skillzss{
         height: 220px;
@@ -508,8 +512,20 @@ section#projekti div.about-img1 img.pocetna {
        
         margin-right: 30px;
     }
+    .skills{
+        padding-bottom: 180px;
+    }
+    .education{
+        padding-bottom: 160px;
+    }
+    
 }
 @media (max-width:778px){
+
+ 
+    
+
+
     .header{
         /* background-color: rgb(33, 49, 50); */
     }
@@ -584,15 +600,26 @@ section#projekti div.about-img1 img.pocetna {
             animation-delay: .7s; 
         }
         section#projekti div.about-img1 img.pocetna {
-            height: 200px !important;
+            height: 100px !important;
             /* ...ostali stilovi... */
+        }
+        /* .home{
+            margin-bottom: 35px;
+        }
+        .about{
+            padding-top: 0; 
+        } */
+
+        .about-content1:nth-of-type(2){
+            width: 85%;
         }
 }
 
 @media (max-width:620px){
 
     section#projekti div.about-img1 img.pocetna {
-        height: 200px !important;
+        height: 100px !important;
+        width: 300px;
         /* ...ostali stilovi... */
     }
 
